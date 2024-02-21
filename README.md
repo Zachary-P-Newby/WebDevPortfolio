@@ -6,3 +6,6 @@ This repository is my personal web frontend development portfolio. It contains p
 ## Other Repositories:
 
  *
+
+
+This is my personal HTML, CSS, and JavaScript portfolio. Here I will display and provide links to various frontend web development projects I have made.
