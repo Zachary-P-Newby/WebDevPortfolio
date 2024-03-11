@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/normalize.css" rel="stylesheet"></link>
+    <link href="styles/styles.css" rel="stylesheet"></link>
+    <title>Zach's Web Workshop</title>
+</head>
+<body>
+    <header id="header">
+        <a href="main.html">Home</a>
+        <div>
+            <h1>Zach's Web Workshop</h1>
+        </div>
+        <a href="mars_photos.html">Mars Rover Photos</a>
+    </header>
+
+    <main>
+
+        
+        <div id="main-body">
+            <h2>Home</h2>
+            <article id="word-counter" class="widget">
+
+                <form id="word-counter-form">
+                    <figcaption>Word Counter</figcaption>
+                    <fieldset>
+                        <textarea id="word-counter-input"></textarea>
+                        <input type="submit" id="word-counter-submit"></input>
+                    </fieldset>
+                    
+                </form>
+
+                <div id="display">
+                    <h3>Results:</h3>
+                    <p id="word-counter-output"></p>
+                </div>
+            </article>
+
+            <article class="widget" ></article>
+            <article class="widget" ></article>
+
+        </div>
+        
+
+        <div id="sidebar">
+            <h2>About</h2>
+            <p>
+This is Zach's web workshop, where Zach makes silly little things to practice his web front-end development and Javascript skills.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h2>Copyright Zach Newby 2024</h2>
+        </div>
+    </footer>
+
+</body>
+<script src="scripts/word_counter.js"></script>
+</html>

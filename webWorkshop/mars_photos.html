@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/normalize.css" rel="stylesheet"></link>
+    <link href="styles/styles.css" rel="stylesheet"></link>
+    <title>Zach's Web Workshop</title>
+</head>
+<body>
+
+    <header id="header">
+        <a href="main.html">Home</a>
+        <div>
+            <h1>Zach's Web Workshop</h1>
+        </div>
+        <a href="mars_photos.html">Mars Rover Photos</a>
+    </header>
+
+    <main id="mars_main">
+
+        <h2>Mars Curiosity Rover Photos</h2>
+        <article class="widget" id="mars_photos">
+            
+            <form id="mars_photo_controls">
+                <figcaption>Controls:</figcaption>
+                <p>Source: <a href="https://api.nasa.gov/">Nasa Open API</a></p>
+                <fieldset id="sol_selector">
+                    <label for="sol_selector_input">Sol Selector:</label>
+                    <input type="number" id="sol_selector_input" max="4100" min="0" value="1000">
+                    <button id="mars_sol_select_btn">Enter Sol</button>
+                </fieldset>
+                
+                <fieldset id="camera_selector">
+                    <h3>Camera Selector</h3>
+                    <!-- for="camera_selector" -->
+                    
+                    <label for="FHAZ" >Front Hazard Avoidance Camera: <input type="radio" id="FHAZ_radio" name="camera_options" value="FHAZ" class="mars_radio" checked></label>
+                    
+                    <label for="NAVCAM" >Navigation Camera: <input type="radio" id="NAVCAM_radio" name="camera_options" value="NAVCAM" class="mars_radio"></label>
+                    
+                    <label for="MAST">Mast Camera: <input type="radio" id="MAST_radio" name="camera_options" value="MAST" class="mars_radio"></label>
+                    
+                    <label for="CHEMCAM">Chemistry and Camera Complex: <input type="radio" id="CHEMCAM_radio" name="camera_options" value="CHEMCAM" class="mars_radio"></label>
+                    
+                    <label for="MAHLI">Mars Hand Lens Imager: <input type="radio" id="MAHLI_radio" name="camera_options" value="MAHLI" class="mars_radio"></label>
+                    
+                    <label for="MARDI">Mars Descent Imager: <input type="radio" id="MARDI_radio" name="camera_options" value="MARDI" class="mars_radio"></label>
+                    
+                    <label for="RHAZ">Rear Hazard Avoidance Camera: <input type="radio" id="RHAZ_radio" name="camera_options" value="RHAZ" class="mars_radio"></label>
+                </fieldset>
+
+                <figcaption>Notice:</figcaption>
+                <p id="mars_notice">A sol is a day on Mars, the number in the sol selector represents nth sol on Mars after the arrival of the Curiosity Rover. Cameras will not always have photos taken on a given sol. Certain cameras, like the Mast, will have a large number of images that requires a significant loading time.</p>
+            </form>
+
+            <picture id="mars-rover-photo-container">
+                <figure id="curiosity_photo_figure">
+                    
+                </figure>
+            </picture>
+        </article>
+
+
+    </main>
+
+    <footer>
+        <div>
+            <h2>Copyright Zach Newby 2024</h2>
+        </div>
+    </footer>
+
+</body>
+
+<script src="scripts/mars_rover_photos.js"></script>
+</html>

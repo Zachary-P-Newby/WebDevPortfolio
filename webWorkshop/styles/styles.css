@@ -1,0 +1,238 @@
+/* Color schemes: */
+/* 
+Anti Flash white - #F0F3F5
+Midnight Green - #19535F
+Skobeloff - #0B7A75
+Dun - #D7C9AA
+Falu red - #7B2D26
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F0F3F5;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+}
+
+/*  header */
+
+header{
+    margin: 0;
+    background-color: #19535F;
+    min-height: 10vh;
+    padding: 1vh 1vw;
+    display: flex; /* Make the container a flex container */
+    justify-content: center; /* Center items along the main axis (horizontal centering) */
+    align-items: center; /* Center items along the cross axis (vertical centering) */
+    
+}
+
+h1{
+    margin: 0 auto;
+    color: #F0F3F5;
+    text-shadow: #7B2D26 2px 2px;
+    font-size: 4rem;
+}
+
+h2{
+    margin: 0 auto;
+    color: #F0F3F5;
+    text-shadow: #19535F 2px 2px;
+    font-size: 2rem;
+}
+
+header div{
+    padding: 0 1rem;
+}
+
+header a{
+    background-color: #D7C9AA;
+    border-radius: 5px;
+    color: #F0F3F5;
+    font-size: 2rem;
+    font-synthesis-weight:auto;
+    font-weight: bold;
+    text-decoration-line: none;
+    padding: 1%;
+}
+
+
+header a:hover{
+    background-color: #7B2D26;
+    font-style: italic;
+}
+
+header a:active{
+    background-color: #F0F3F5;
+    color: #D7C9AA;
+}
+
+/* main */
+main {
+    min-height: 50vh;
+    background-color: #7B2D26;
+    padding: 1vw 1vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 2.5vh 5vw;
+    border-radius: 8px;
+}
+
+#main-body {
+    width: 75%;
+    margin: 0;
+    border-radius: 8px;
+    padding: 1vh 1vw;
+}
+
+/* Sidebar */
+
+#sidebar {
+    background-color: #D7C9AA;
+    color: white;
+    width: 25%;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 8px;
+}
+
+/* widgets */
+
+.widget{ background-color: #D7C9AA;
+    color: black;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;}
+    
+
+#sidebar p{
+    color: black;
+}
+
+/* Word Counter  */
+
+/* #word-counter{
+    font-family: Arial, Helvetica, sans-serif;} */
+
+#word-counter #word-counter-form{
+    background-color: #D7C9AA;
+    padding: 1rem;
+    
+}
+
+#word-counter #word-counter-form fieldset{
+    display: flex;
+    /* flex-direction: column; */
+    flex-flow: column;
+    border: none;
+}
+
+#word-counter #display{
+    background-color: #D7C9AA;
+    padding: 1rem;
+    border-top: 1vh #D7C9AA solid;
+    
+}
+
+#word-counter textarea{
+    border: solid 1px #D7C9AA;
+    margin-bottom: 1%;
+}
+
+#word-counter #word-counter-submit{
+    border-radius: 5px;
+    border: none;
+    background-color: #7B2D26;
+    color: white;
+}
+
+#word-counter #word-counter-submit:hover{
+    background-color: white;
+    color: #7B2D26;
+}
+
+#word-counter #word-counter-output{
+    min-height: 1.2rem;
+}
+
+
+/* Mars photos page and widget */
+#mars_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 1vh 3vw;
+}
+
+#mars_photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#mars_photo_controls{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+#mars_photo_controls figcaption{
+    color: #F0F3F5;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
+
+#mars_photo_controls fieldset{
+    background-color: #F0F3F5;
+    border-radius: 8px;
+    border: #19535F 2px solid;
+    margin: 1rem 0;
+}
+
+#mars-rover-photo-container .mars_photo{
+    border: solid white 5px;
+    max-width: 20vw;
+    max-height: 20vh;
+}
+
+#camera_selector{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 30vw;
+    /* align-content: center; */
+}
+
+#camera_selector h3{
+    text-decoration-line: underline;
+}
+
+#mars_notice{
+    background-color: #F0F3F5;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #19535F;
+    min-height: 20vh;
+    text-shadow: #7B2D26 2px 2px;
+}
+
+footer h2{
+    text-shadow: #7B2D26 2px 2px;
+}
